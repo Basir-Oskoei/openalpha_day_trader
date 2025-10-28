@@ -1,0 +1,11 @@
+pandas==2.2.2
+numpy==1.26.4
+yfinance==0.2.43
+scikit-learn==1.4.2
+scipy==1.11.4
+plotly==5.24.1
+streamlit==1.39.0
+SQLAlchemy==2.0.31
+pydantic==2.8.2
+pyyaml==6.0.2
+pytest==8.2.0

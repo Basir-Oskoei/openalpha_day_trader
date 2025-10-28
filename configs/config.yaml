@@ -1,0 +1,33 @@
+provider:
+  name: yfinance
+  interval_seconds: 60
+  allow_short: true
+  universe_csv: configs/universe.csv
+
+risk:
+  equity: 100000.0
+  risk_budget_per_trade: 0.0025
+  max_name_exposure: 0.05
+  net_long_cap: 0.9
+  net_short_cap: 0.9
+  daily_drawdown_kill: 0.05
+
+fees:
+  commission_per_share: 0.005
+  slippage_bps: 1.0
+
+signals:
+  retrain_lookback_bars: 2000
+  min_bars_for_features: 220
+  model_weight: 0.6
+  rules_weight: 0.4
+  prob_long_threshold: 0.55
+  prob_short_threshold: 0.45
+  time_exit_bars: 30
+  atr_window: 14
+
+backtest:
+  bar_interval: "1d"
+  start: "2022-01-01"
+  end: "2024-12-31"
+  walk_forward_window: 200
